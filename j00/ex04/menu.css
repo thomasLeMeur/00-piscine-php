@@ -1,0 +1,32 @@
+ul ul
+{
+	display:none;
+	position:absolute;
+	margin:0px;
+	padding:0px;
+	border:1px bold #B0B0B0;
+}
+
+.menu
+{
+	text-align:center;
+}
+
+li
+{
+	list-style-type:none;
+	position:relative;
+	width:200px;
+	background-color:#c0f0E9;
+}
+
+li:hover
+{
+	background-color:#F00F70;
+}
+
+li:hover ul.sousmenu
+{
+	display:block;
+}
+

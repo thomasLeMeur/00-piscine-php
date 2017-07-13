@@ -1,0 +1,296 @@
+body
+{
+	background-color:#505050;
+}
+
+.tmp
+{
+	float:left;
+	margin:-90px;
+	padding:10px;
+	opacity:0;
+}
+
+.left
+{
+	position:absolute;
+	left:195px;
+	top:180px;
+	border-radius:10px;
+	background-color:#909090;
+	box-shadow:10px 10px 10px black;
+	width:142px;
+	height:426px;
+}
+
+.top
+{
+	position:absolute;
+	left:166px;
+	top:22px;
+	border-radius:10px;
+	background-color:#909090;
+	box-shadow:10px 10px 10px black;
+	width:1420px;
+	height:139px;
+}
+
+.div_close
+{
+	z-index:2;
+	position:absolute;
+	left:1556px;
+	top:141px;
+	width:20px;
+	height:20px;
+}
+
+.div_reload
+{
+	z-index:2;
+	position:absolute;
+	left:1556px;
+	top:32px;
+	width:20px;
+	height:20px;
+}
+
+.img_top_1
+{
+	position:absolute;
+	left:11px;
+	top:10px;
+	width:424px;
+	height:110px;
+}
+
+.img_top_2
+{
+	position:absolute;
+	left:1390px;
+	top:10px;
+	width:20px;
+	height:20px;
+}
+
+.img_top_3
+{
+	position:absolute;
+	left:1390px;
+	top:109px;
+	width:20px;
+	height:20px;
+}
+
+.img_top_4
+{
+	z-index:2;
+	position:absolute;
+	left:1300px;
+	top:34px;
+}
+
+.right
+{
+	position:absolute;
+	left:1415px;
+	top:180px;
+	border-radius:10px;
+	background-color:#909090;
+	box-shadow:10px 10px 10px black;
+	width:142px;
+	height:426px;
+}
+
+.img_right_1
+{
+	position:absolute;
+	left:36px;
+	top:17px;
+	width:70px;
+	height:93px;
+}
+
+.img_right_2
+{
+	position:absolute;
+	left:36px;
+	top:118px;
+	width:71px;
+	height:58px;
+}
+
+.img_right_3
+{
+	position:absolute;
+	left:10px;
+	top:179px;
+	width:122px;
+	height:70px;
+	background-image:url(resources/brick.jpg);
+}
+
+.div_ikea
+{
+	z-index:2;
+	position:absolute;
+	left:725px;
+	top:530px;
+	width:40px;
+	height:80px;
+}
+
+.div_apple
+{
+	z-index:2;
+	position:absolute;
+	left:1180px;
+	top:526px;
+	width:150px;
+	height:80px;
+}
+
+p
+{
+	display:inline;
+}
+
+.pub
+{
+	opacity:0;
+}
+
+.bottom
+{
+	z-index:2;
+	position:absolute;
+	left:120px;
+	top:686px;
+	border-radius:10px;
+	background-color:#88ff89;
+	box-shadow:10px 10px 10px black;
+	width:521px;
+	height:169px;
+}
+
+.text
+{
+	position:absolute;
+	margin-left:10px;
+	margin-top:8px;
+}
+
+.text_1
+{
+	font-family:"Verdana";
+	font-weight:lighter;
+}
+
+.text_2
+{
+	font-family:"Georgia";
+	font-size:30px;
+	letter-spacing:1.2px;
+}
+
+.text_3
+{
+	font-family:"Verdana";
+	font-weight:light;
+	letter-spacing:0.9px;
+	text-shadow:5px 5px 5px #fb0000;
+}
+
+.button
+{
+	position:absolute;
+	margin-top:-20px;
+	margin-left:390px;
+	width:80px;
+	height:20px;
+}
+
+.fields
+{
+	position:absolute;
+	width:320px;
+	height:20px;
+	margin-top:86px;
+	margin-left:13px;
+}
+
+.center
+{
+	position:absolute;
+	left:366px;
+	top:180px;
+	border-radius:10px;
+	background-color:#909090;
+	box-shadow:10px 10px 10px black;
+	width:1021px;
+	height:583px;
+}
+
+.img_center
+{
+	position:absolute;
+	left:10px;
+	top:10px;
+	width:1000px;
+	height:560px;
+}
+
+.img_left_1
+{
+	position:absolute;
+	left:32px;
+	top:13px;
+	width:70px;
+	height:70px;
+}
+
+.img_left_2
+{
+	position:absolute;
+	left:32px;
+	top:94px;
+	width:70px;
+	height:70px;
+}
+
+.img_border
+{
+	border-radius:5px;
+	border-style:solid;
+	border-color:#fb0000;
+	border-width:6px;
+	width:67px;
+	height:64px;
+	position:absolute;
+	left:29px;
+	top:171px;
+}
+
+.img_left_3
+{
+	width:66px;
+	height:63px;
+}
+
+.img_left_4
+{
+	position:absolute;
+	left:32px;
+	top:250px;
+	width:70px;
+	height:70px;
+}
+
+.img_left_5
+{
+	position:absolute;
+	left:32px;
+	top:331px;
+	width:70px;
+	height:70px;
+}

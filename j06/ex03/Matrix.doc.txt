@@ -1,0 +1,28 @@
+<- Matrix ----------------------------------------------------------------------
+The Matrix class is a matrix which can be a certain preset in :
+IDENTITY, SCALE, RX, RY, TRANSLATION, PROJECTION;
+
+An instance can be contructed from a preset with optionnal arguments :
+new Vector( 'preset' => self::IDENTITY [, ...);
+new Vector( 'preset' => self::SCALE, 'scale' => s [, ...);
+new Vector( 'preset' => self::RX or self::RY or self::RZ, 'angle' => a [, ...);
+new Vector( 'preset' => self::TRANSLATION, 'vtc' => Vector v [, ...);
+	(cf Vector.doc.txt)
+new Vector( 'preset' => self::PROJECTION, 'fov' => f, 'ratio' => r,
+	'near' => n, 'far' =>f, [, ...);
+
+The class provides the following methods :
+
+int gettype();
+Return the preset of the matrix.
+
+array getmatrix();
+Return the current value of the matrix.
+
+Matrix mult( Matrix $rhs );
+return a new matrix resulting on the multiplication of the both;
+
+Vertex tranformVertex( Vertex $vtx );
+Return a new vertex (cf Vertex.doc.txt) resulting on the $vtx transform
+with the matrix;
+---------------------------------------------------------------------- Matrix ->

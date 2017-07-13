@@ -1,0 +1,26 @@
+<- Camera ----------------------------------------------------------------------
+The Camera class provides a mean to have a view a scene.
+
+An instance can be contructed from a preset with optionnal arguments :
+new Camera ( array ( ['origin' => Vertex v [, 'orientation' => Matrix m
+[, 'width' => w [, 'height' => h [, 'ratio' => r [, 'fov' => f [, 'near' => n
+[, 'far' =>f));
+
+Be carreful, 'width' and 'height' are no compatible with 'ratio'.
+By default :
+'origin' = new Vertex ( array ( 'x' => 0, 'y' => 0, 'z' => 0 ) );
+'oriantation' = new Matrix ( array ( 'preset' => Matrix::IDENTITY ) );
+'width' = 640;
+'height' = 480;
+'ratio' = 640 / 480;
+'fov' = 60;
+'near' = 1.0;
+'far' = 50;
+
+The class provides the following method :
+
+Vertex watchVertex( Vertex $worldVertex );
+Return a new vertex (cf Vertex.doc.txt) resulting on the $worldVertexvtx
+transform with the camera (and its matrix (cf Matrix.doc.txt)) to get a pixel
+point to print.
+---------------------------------------------------------------------- Camera ->

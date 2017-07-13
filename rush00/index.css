@@ -1,0 +1,240 @@
+body
+{
+	margin: 0;
+	background-color: #F3E2A9;
+}
+
+.produits
+{
+	position: absolute;
+	text-align: center;
+	left: 150px;
+	width: 70%;
+	height: 100%;
+}
+
+.titre
+{
+	font-family: "Impact";
+}
+
+.button
+{
+	box-shadow: 2px 2px 2px #A4A4A4;
+	border-radius: 5px;
+	background-color:#FFFFFF;
+	font-style: italic;
+	font-size: 15px;
+	font-family: "cursive";
+}
+
+.categorie
+{
+	text-align: left;
+	font-size: 18px;
+}
+
+.menu
+{
+	position: absolute;
+	top: 0px;
+	max-width: 130px;
+	width: 30%;
+	height: 100%;
+}
+
+.menu h2
+{
+	text-align: center;
+}
+
+.all
+{
+	margin-left: 20px;
+	margin-right: 20px;
+	width: 80%;
+	height:100%;
+}
+
+#hr_menu
+{
+	height: -1px;
+}
+
+#hr
+{
+	float: left;
+	height: 97%;
+	width: 0px;
+}
+
+.shop
+{
+	border-radius: 8px;
+	border: solid;
+	border-color: #2E2E2E;
+	border-width: 2px;
+	background-color: #F3E2A9;
+	width: 99%;
+	position: relative;
+	margin-top: 30px;
+	margin-left: 10px;
+}
+
+.header
+{
+	height : 100px;
+	background-color : #0B2F3A;
+}
+
+.sign
+{
+	padding : 5px;
+	max-height: 60px;
+	display: inline-block;
+}
+
+.user a
+{
+	text-decoration: none;
+	color: white;
+}
+
+.user h3
+{
+	font-family: "Courier New";
+}
+
+.user
+{
+	float:right;
+	width: 350px;
+}
+
+.log
+{
+	text-align: center;
+	border: solid;
+	margin-top: 450px;
+	background-color : #0B2F3A;
+	border-width: 2px;
+}
+
+.regis h1
+{
+	font-family: "Impact";
+	color: white;
+}
+
+#log_id
+{
+	text-align: center;
+	font-family: "courier";
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.text
+{
+	margin-left: 12px;
+}
+
+#but_log
+{
+	margin-top: 10px;
+	margin-left: 5px;
+}
+
+#ram
+{
+	margin-top : 300px;
+}
+
+.conect h1
+{
+	font-family: "Impact";
+	color: white;
+}
+
+.table
+{
+	background-color : #1C4957;
+	text-align: center;
+	border-collapse;
+	width: 100%;
+}
+
+#indice
+{
+	font-family: "courier";
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.list
+{
+	display: inline-block;
+}
+
+.logs
+{
+	background-color: #F3E2A9;
+}
+
+.main
+{
+	text-align: center;
+}
+
+.article
+{
+	border: solid;
+	border-width: 2px;
+	float:left;
+	width:250px;
+	height:270px;
+	margin:30px;
+}
+
+#add
+{
+	box-shadow: 2px 2px 2px #A4A4A4;
+	border-radius: 5px;
+	background-color:#FFFFFF;
+	margin-right: 3px;
+	font-style: italic;
+	font-size: 15px;
+	float: right;
+	font-family: "cursive";
+}
+
+.right
+{
+	font-size: 15px;
+	font-family: "courier";
+	text-overflow: ellipsis;
+}
+
+
+.price
+{
+	font-family: "courier";
+}
+
+#panier_img
+{
+	width: 25px;
+	height 25px;
+}
+
+.left h3
+{
+	font-family: "Courier";
+}
+
+#article_img
+{
+	width: 180px;
+	margin: 10px;
+	height: 120px;
+}

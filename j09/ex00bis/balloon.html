@@ -1,0 +1,55 @@
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+</head>
+<body>
+	<div id="baloon"
+		style="background-color:red;width:200px;height:200px;border-radius:50%;">
+	</div>
+	<script>
+		$(document).ready(function()
+		{
+			$('#baloon').mouseout(function()
+			{
+				var size = $(this).width();
+				var col = $(this).css('backgroundColor');
+				if (size > 200)
+				{
+					size -= 5;
+					$(this).width(size);
+					$(this).height(size);
+					if (col == 'rgb(0, 128, 0)')
+						col = "red";
+					else if (col == 'rgb(0, 0, 255)')
+						col = "green";
+					else if (col == 'rgb(255, 0, 0)')
+						col = "blue";
+					$(this).css('backgroundColor', col);
+				}
+			}),
+			$('#baloon').click(function()
+			{
+				var size = $(this).width();
+				var col = $(this).css('backgroundColor');
+				if (size >= 420)
+				{
+					$(this).width(200);
+					$(this).height(200);
+				}
+				else
+				{
+					size += 10;
+					$(this).width(size);
+					$(this).height(size);
+				}
+				if (col == 'rgb(255, 0, 0)')
+					col = "green";
+				else if (col == 'rgb(0, 128, 0)')
+					col = "blue";
+				else if (col == 'rgb(0, 0, 255)')
+					col = "red";
+				$(this).css('backgroundColor', col);
+			});
+		});
+	</script>
+</body>

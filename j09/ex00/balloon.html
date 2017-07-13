@@ -1,0 +1,53 @@
+<html>
+<body>
+	<div id="baloon" onclick="my_add()" onmouseout="my_sub()"
+		style="background-color:red;width:200px;height:200px;border-radius:50%;">
+	</div>
+	<script>
+		function my_sub()
+		{
+			var elem = document.getElementById('baloon');
+			var size = elem.getBoundingClientRect().width;
+			var col = elem.style.backgroundColor;
+			if (size > 200)
+			{
+				size -= 5;
+				size = size.toString();
+				elem.style.width = size.concat('px');
+				elem.style.height = size.concat('px');
+				if (col == "green")
+					col = "red";
+				else if (col == "blue")
+					col = "green";
+				else if (col == "red")
+					col = "blue";
+				elem.style.backgroundColor = col;
+			}
+		}
+		function my_add()
+		{
+			var elem = document.getElementById('baloon');
+			var size = elem.getBoundingClientRect().width;
+			var col = elem.style.backgroundColor;
+			if (size >= 420)
+			{
+				elem.style.width = '200px';
+				elem.style.height = '200px';
+			}
+			else
+			{
+				size += 10;
+				size = size.toString();
+				elem.style.width = size.concat('px');
+				elem.style.height = size.concat('px');
+			}
+			if (col == "red")
+				col = "green";
+			else if (col == "green")
+				col = "blue";
+			else if (col == "blue")
+				col = "red";
+			elem.style.backgroundColor = col;
+		}
+	</script>
+</body>

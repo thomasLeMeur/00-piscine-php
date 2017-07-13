@@ -1,0 +1,74 @@
+<html>
+	<body onload="setInterval(function() { alert('Please, use me...'); }, 30000)">
+	<div>
+		<input id="l" type="text">
+		<select id="op">
+			<option value="+">+</option>
+			<option value="-">-</option>
+			<option value="*">*</option>
+			<option value="/">/</option>
+			<option value="%">%</option>
+		</select>
+		<input id="r" type="text">
+		<input onclick="my_calc()" type="submit" value="Try me!">
+	</div>
+	<script>
+		function my_calc()
+		{
+			var l = document.getElementById('l').value;
+			var lv = parseInt(l, 10);
+			var op = document.getElementById('op');
+			op = op.options[op.selectedIndex].value;
+			var r = document.getElementById('r').value;
+			var rv = parseInt(r, 10);
+			if (lv < 0 || rv < 0 || lv.toString() !== l || rv.toString() !== r || isNaN(lv) || isNaN(rv)
+				|| lv == Number.POSITIVE_INFINITY || lv == Number.NEGATIVE_INFINTY
+				|| rv == Number.POSITIVE_INFINITY || rv == Number.NEGATIVE_INFINTY)
+				alert('Error :(');
+			else
+			{
+				if (op == '+')
+				{
+					alert(lv + rv);
+					console.log(lv + rv);
+				}
+				else if (op == '-')
+				{
+					alert(lv - rv);
+					console.log(lv - rv);
+				}
+				else if (op == '*')
+				{
+					alert(lv * rv);
+					console.log(lv * rv);
+				}
+				else if (op == '/')
+				{
+					if (rv == 0)
+					{
+						alert("It's over 9000!");
+						console.log("It's over 9000!");
+					}
+					else
+					{
+						alert(lv / rv);
+						console.log(lv / rv);
+					}
+				}
+				else if (op == '%')
+				{
+					if (rv == 0)
+					{
+						alert("It's over 9000!");
+						console.log("It's over 9000!");
+					}
+					else
+					{
+						alert(lv % rv);
+						console.log(lv % rv);
+					}
+				}
+			}
+		}
+	</script>
+</body>

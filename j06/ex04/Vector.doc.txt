@@ -1,0 +1,49 @@
+<- Vector ----------------------------------------------------------------------
+The Vector class is represented by the magnitudes x, y, z, w;
+
+An instance can be contructed from a destination vertex (cf. Vertex.doc.txt)
+(at least) and a origin vertex :
+new Vector( 'dest' => Vertex dest [, 'orig' => Vertex orig);
+
+The class provides the following methods :
+
+float getmagx();
+Return the current value of the x magnitude.
+
+float getmagy();
+Return the current value of the y magnitude.
+
+float getmagz();
+Return the current value of the z magnitude.
+
+float getw();
+Return the current value of the w magnitude.
+
+float magnitude();
+Return the vector norm.
+
+Vector normalize();
+Return the normalized vector. If it is already normalized, return a clone of
+the vector.
+
+Vector add( Vector $rhs );
+Return the sum vector.
+
+Vector sub( Vector $rhs );
+Return the diff vector.
+
+Vector opposite( Vector $rhs );
+Return the opposite vector.
+
+Vector scalarProduct( $k );
+Return the product of the vector and a scalar value;
+
+Vector dotProduct( Vector $rhs );
+Return the scalar product of two vectors.
+
+Vector crossProduct( Vector $rhs );
+Return the cross product of two vectors.
+
+float cos( Vector $rhs )
+Return the cosinus of the two vectors angle.
+---------------------------------------------------------------------- Vertex ->

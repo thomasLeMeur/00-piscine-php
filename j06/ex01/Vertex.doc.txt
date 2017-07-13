@@ -1,0 +1,43 @@
+<- Vertex ----------------------------------------------------------------------
+The Vertex class is represented by x, y, z, w coordinates and a color of the
+Color class (ref to Color.doc.txt).
+
+An instance can be contructed from a x, y and z coordinates (at least), a w and
+a color :
+new Vertex( array ( 'x' => 1, 'y' => 2, 'z' => 3 [, 'w' => 4
+[, 'color' => Color col));
+
+X, y, z and w are the Homogeneous coordinates of the vertex.
+
+The class provides the following methods :
+
+float getx();
+Return the current value of the x coordinate.
+
+float gety();
+Return the current value of the y coordinate.
+
+float getz();
+Return the current value of the z coordinate.
+
+float getw();
+Return the current value of the w coordinate.
+
+Color getcol();
+Return the current value of the Color col.
+
+void setx( $val );
+Change the current value of the x coordinate with $val.
+
+void sety( $val);
+Change the current value of the y coordinate with $val.
+
+void setz( $val );
+Change the current value of the z coordinate with $val.
+
+void setw( $val );
+Change the current value of the w coordinate with $val.
+
+void setcol( Color $val );
+Change the current value of the Color col with $val.
+---------------------------------------------------------------------- Vertex ->

@@ -1,0 +1,83 @@
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+</head>
+<body>
+	<div>
+		<input id="l" type="text">
+		<select id="op">
+			<option value="+">+</option>
+			<option value="-">-</option>
+			<option value="*">*</option>
+			<option value="/">/</option>
+			<option value="%">%</option>
+		</select>
+		<input id="r" type="text">
+		<input id="do" type="submit" value="Try me!">
+	</div>
+	<script>
+		$(document).ready(function()
+		{
+			$('body').ready(function()
+			{
+				setInterval(function() {alert("Please, use me...")}, 30000);
+			}),
+			$('#do').click(function()
+			{
+				var l = $('#l').val();
+				var lv = parseInt(l, 10);
+				var op = $('#op option:selected').val();
+				var r = $('#r').val();
+				var rv = parseInt(r, 10);
+				if (lv < 0 || rv < 0 || lv.toString() !== l || rv.toString() !== r || isNaN(lv) || isNaN(rv)
+					|| lv == Number.POSITIVE_INFINITY || lv == Number.NEGATIVE_INFINTY
+					|| rv == Number.POSITIVE_INFINITY || rv == Number.NEGATIVE_INFINTY)
+					alert('Error :(');
+				else
+				{
+					if (op == '+')
+					{
+						alert(lv + rv);
+						console.log(lv + rv);
+					}
+					else if (op == '-')
+					{
+						alert(lv - rv);
+						console.log(lv - rv);
+					}
+					else if (op == '*')
+					{
+						alert(lv * rv);
+						console.log(lv * rv);
+					}
+					else if (op == '/')
+					{
+						if (rv == 0)
+						{
+							alert("It's over 9000!");
+							console.log("It's over 9000!");
+						}
+						else
+						{
+							alert(lv / rv);
+							console.log(lv / rv);
+						}
+					}
+					else if (op == '%')
+					{
+						if (rv == 0)
+						{
+							alert("It's over 9000!");
+							console.log("It's over 9000!");
+						}
+						else
+						{
+							alert(lv % rv);
+							console.log(lv % rv);
+						}
+					}
+				}
+			});
+		});
+	</script>
+</body>
